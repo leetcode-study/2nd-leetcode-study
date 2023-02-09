@@ -1,11 +1,11 @@
 var orangesRotting = function (grid) {
   const queue = [];
-  let oranges = 0;
-  let time = 0;
+  let fresh = 0;
+  let minute = 0;
   for (let r = 0; r < grid.length; r++) {
     for (let c = 0; c < grid[r].length; c++) {
       if (grid[r][c] === 2) queue.push([r, c]);
-      else if (grid[r][c] === 1) oranges++;
+      else if (grid[r][c] === 1) fresh++;
     }
   }
   const dirs = [
@@ -14,26 +14,27 @@ var orangesRotting = function (grid) {
     [0, -1],
     [0, 1],
   ];
-  while (queue.length && oranges) {
+  while (queue.length && fresh) {
     const len = queue.length;
     for (let i = 0; i < len; i++) {
       const [r, c] = queue.shift();
-      for (const [dr, dc] of dirs) {
+      for (const [dR, dC] of dirs) {
+        const nR = r + dR;
+        const nC = c + dC;
         if (
-          r + dr < 0 ||
-          c + dc < 0 ||
-          r + dr >= grid.length ||
-          c + dc >= grid[r + dr].length
+          nR < 0 ||
+          nC < 0 ||
+          nR >= grid.length ||
+          nC >= grid[nR].length ||
+          grid[nR][nC] !== 1
         )
           continue;
-        if (grid[r + dr][c + dc] === 1) {
-          grid[r + dr][c + dc] = 2;
-          queue.push([r + dr, c + dc]);
-          oranges--;
-        }
+        grid[nR][nC] = 2;
+        queue.push([nR, nC]);
+        fresh--;
       }
     }
-    time++;
+    minute++;
   }
-  return oranges === 0 ? time : -1;
+  return fresh === 0 ? minute : -1;
 };
