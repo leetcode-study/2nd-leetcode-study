@@ -30,6 +30,12 @@
 게임 맵 최단거리 1844 - Level 2
 네트워크 43162 - Level 3
 117. Populating Next Right Pointers in Each Node II - Medium (Tree)
+
+# 5주차 Leecode + Programmers - 2월 23일 (목)
+단어 변환 43163 - Level 3
+아이템 줍기 87694 - Level 3
+여행경로 43164 - Level 3
+퍼즐 조각 채우기 84021 - Level 3
 ```
 
 **매주 목요일 9시**에 **비대면** 구글 미트로 진행될 예정입니다. **(30분 ~ 1시간)**
