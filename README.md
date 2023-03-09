@@ -36,6 +36,18 @@
 아이템 줍기 87694 - Level 3
 여행경로 43164 - Level 3
 퍼즐 조각 채우기 84021 - Level 3
+
+# 5주차 Leecode + Programmers - 3월 9일 (목)
+단어 변환 43163 - Level 3
+아이템 줍기 87694 - Level 3
+여행경로 43164 - Level 3
+퍼즐 조각 채우기 84021 - Level 3
+
+# 6주차 Leecode + Programmers - 3월 16일 (목)
+아이템 줍기 87694 - Level 3
+퍼즐 조각 채우기 84021 - Level 3
+841. Keys and Rooms - Medium
+959. Regions Cut By Slashes - Medium
 ```
 
 **매주 목요일 9시**에 **비대면** 구글 미트로 진행될 예정입니다. **(30분 ~ 1시간)**
